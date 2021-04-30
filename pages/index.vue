@@ -3,7 +3,11 @@
     <p class="title">{{ message }}!</p>
     <hr>
     <router-link to="/price">Price Page</router-link>
-    <div>{{ users[0].id }}, {{ users[0].name }}</div>
+    <ul>
+      <li v-for="user in users" :key="user.id">
+        {{ user.id }}, {{ user.name }}
+      </li>
+    </ul>
   </div>
 </template>
 
