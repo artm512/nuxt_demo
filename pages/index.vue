@@ -2,7 +2,10 @@
   <div class="container">
     <p class="title">{{ message }}!</p>
     <div><img src="~/assets/cat.jpg" alt=""></div>
-    <p class="title">{{ $store.state.message }}</p>
+    <div class="vuex_area">
+      <p class="title">{{ $store.state.message }}</p>
+      <button @click="$store.commit('updateMessage', 'Commit with payload')">update</button>
+    </div>
     <hr>
     <router-link to="/price">Price Page</router-link>
     <ul>

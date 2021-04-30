@@ -6,6 +6,11 @@ const createStore = () => {
       return {
         message: 'Hello Vuex!'
       }
+    },
+    mutations: {
+      updateMessage(state, payload) {
+        state.message = payload;
+      }
     }
   });
 }
