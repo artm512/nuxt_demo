@@ -4,7 +4,7 @@
     <div><img src="~/assets/cat.jpg" alt=""></div>
     <div class="vuex_area">
       <p class="title">{{ $store.state.message }}</p>
-      <button @click="$store.commit('updateMessage', 'Commit with payload')">update</button>
+      <button @click="$store.dispatch('updateMessageAction', 'Dispatch with payload')">update</button>
     </div>
     <hr>
     <router-link to="/price">Price Page</router-link>
