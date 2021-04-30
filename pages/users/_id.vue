@@ -11,6 +11,10 @@ export default {
     return {
       message: '/users/_id.vueを表示中'
     }
+  },
+  // バリデーション設定: falseを返すとエラーページへ飛ぶ
+  validate({ params }) {
+    return /^\d+$/.test(params.id);
   }
 }
 </script>
