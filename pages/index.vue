@@ -1,6 +1,7 @@
 <template>
   <div class="container">
     <p class="title">{{ message }}!</p>
+    <div><img src="~/assets/cat.jpg" alt=""></div>
     <hr>
     <router-link to="/price">Price Page</router-link>
     <ul>
