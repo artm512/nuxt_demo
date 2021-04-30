@@ -21,11 +21,18 @@ export default {
       message: 'Hello World'
     }
   },
-  asyncData({ params }) {
+  asyncData({ error, params }) {
     return axios.get(url)
       .then(res => {
         return { users: res.data };
       })
+      .catch(e => {
+        // console.log(e.response.status);
+        error({ 
+          statusCode: e.response.status,
+          message: e.message
+        })
+      });
   }
 }
 </script>
