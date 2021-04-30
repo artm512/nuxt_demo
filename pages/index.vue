@@ -1,11 +1,19 @@
 <template>
   <div class="container">
-    <p>Hello Worldです!</p>
+    <p>{{ message }}です!</p>
+    <hr>
+    <router-link to="/price">Price Page</router-link>
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      message: 'Hello World'
+    }
+  }
+}
 </script>
 
 <style>
