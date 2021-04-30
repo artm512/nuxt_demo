@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <p>{{ message }}です!</p>
+    <p class="title">{{ message }}!</p>
     <hr>
     <router-link to="/price">Price Page</router-link>
   </div>
@@ -17,5 +17,8 @@ export default {
 </script>
 
 <style>
+.title {
+  font-family: 'Permanent Marker', cursive;
+}
 
 </style>
