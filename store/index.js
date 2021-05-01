@@ -1,23 +1,15 @@
-import Vuex from 'vuex';
+export const state = () => ({
+  message: 'Hello Vuex!'
+})
 
-const createStore = () => {
-  return new Vuex.Store({
-    state() {
-      return {
-        message: 'Hello Vuex!'
-      }
-    },
-    mutations: {
-      updateMessage(state, payload) {
-        state.message = payload;
-      }
-    },
-    actions: {
-      updateMessageAction(context, payload) {
-        context.commit('updateMessage', payload);
-      }
-    }
-  });
+export const mutations = {
+  updateMessage(state, payload) {
+    state.message = payload;
+  }
 }
 
-export default createStore;
+export const actions = {
+  updateMessageAction(context, payload) {
+    context.commit('updateMessage', payload);
+  }
+}
