@@ -4,9 +4,5 @@
     <hr>
     <router-link to="/">Top Page</router-link>
     <Counter />
-    <hr>
-    <Counter />
-    <hr>
-    <Counter />
   </section>
 </template>
